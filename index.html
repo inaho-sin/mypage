@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0d1117;
+      font-family: 'Segoe UI', sans-serif;
+      color: #e6edf3;
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .label {
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #58a6ff;
+      margin-bottom: 1.2rem;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 10vw, 6rem);
+      font-weight: 700;
+      line-height: 1.1;
+      background: linear-gradient(135deg, #58a6ff 0%, #bc8cff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1.5rem;
+    }
+
+    .sub {
+      font-size: 1rem;
+      color: #8b949e;
+      margin-bottom: 2.5rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border: 1px solid #30363d;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      color: #58a6ff;
+      background: rgba(88, 166, 255, 0.05);
+    }
+
+    .badge::before {
+      content: '●';
+      margin-right: 0.4rem;
+      color: #3fb950;
+      animation: blink 2s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="label">GitHub Pages</p>
+    <h1>Hello, World!</h1>
+    <p class="sub">はじめてのページが公開されました</p>
+    <span class="badge">公開中</span>
+  </div>
+</body>
+</html>
